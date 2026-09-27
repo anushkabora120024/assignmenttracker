@@ -1,0 +1,11 @@
+def show_menu():
+    print("\n================================")
+    print("     STUDENT ASSIGNMENT TRACKER")
+    print("================================")
+    print("1. Add Assignment")
+    print("2. View Assignments")
+    print("3. Mark Assignment as Completed")
+    print("4. Delete Assignment")
+    print("5. Search Assignment")
+    print("6. View Pending Assignments")
+    print("7. Exit")
