@@ -47,7 +47,7 @@ Download and install Python 3 on your computer.
 Download this repository from GitHub or clone it using Git.
 
 ```bash
-git clone https://github.com/your-username/student-assignment-tracker.git
+git clone https://github.com/anushkabora120024/assignmenttracker
 ```
 
 ### Step 3: Open the Project
