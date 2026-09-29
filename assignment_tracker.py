@@ -1,27 +1,16 @@
 # Student Assignment Tracker
-# Python Essentials Project
-
 assignments = []
-
-
 def add_assignment():
     print("\n--- Add Assignment ---")
-
     name = input("Enter assignment name: ")
     subject = input("Enter subject: ")
     deadline = input("Enter deadline (DD-MM-YYYY): ")
     priority = input("Enter priority (High/Medium/Low): ")
 
-    new_assignment = {
-        "name": name,
-        "subject": subject,
-        "deadline": deadline,
-        "priority": priority,
-        "status": "Pending"
-    }
+    new_assignment = {"name": name,"subject": subject,"deadline": deadline,"priority": priority,"status": "Pending"}
 
     assignments.append(new_assignment)
-    print("Assignment added successfully!")
+    print("Assignment added ")
 
 
 def view_assignments():
@@ -35,11 +24,11 @@ def view_assignments():
         a = assignments[i]
 
         print("\nAssignment", i + 1)
-        print("Name     :", a["name"])
-        print("Subject  :", a["subject"])
-        print("Deadline :", a["deadline"])
-        print("Priority :", a["priority"])
-        print("Status   :", a["status"])
+        print("Name:", a["name"])
+        print("Subject:", a["subject"])
+        print("Deadline:", a["deadline"])
+        print("Priority:", a["priority"])
+        print("Status:", a["status"])
 
 
 def mark_completed():
@@ -50,7 +39,6 @@ def mark_completed():
         return
 
     view_assignments()
-
     try:
         num = int(input("\nEnter assignment number: "))
 
@@ -72,7 +60,6 @@ def delete_assignment():
         return
 
     view_assignments()
-
     try:
         num = int(input("\nEnter assignment number to delete: "))
 
@@ -123,20 +110,17 @@ def pending_assignments():
 
         if a["status"] == "Pending":
             print("\nAssignment", i + 1)
-            print("Name     :", a["name"])
-            print("Subject  :", a["subject"])
-            print("Deadline :", a["deadline"])
-            print("Priority :", a["priority"])
+            print("Name:", a["name"])
+            print("Subject:", a["subject"])
+            print("Deadline:", a["deadline"])
+            print("Priority:", a["priority"])
 
             found = True
 
     if found == False:
         print("No pending assignments.")
-
-
-# Main program
+# program menu
 while True:
-
     print("\n================================")
     print("     STUDENT ASSIGNMENT TRACKER")
     print("================================")
@@ -170,7 +154,7 @@ while True:
         pending_assignments()
 
     elif choice == "7":
-        print("\nThank you for using Assignment Tracker!")
+        print("\nThank you for using Assignment Tracker")
         break
 
     else:
