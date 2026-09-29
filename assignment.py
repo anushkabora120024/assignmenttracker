@@ -4,8 +4,7 @@ from assignment import (
     mark_completed,
     delete_assignment,
     search_assignment,
-    pending_assignments
-)
+    pending_assignments)
 
 from utils import show_menu
 
