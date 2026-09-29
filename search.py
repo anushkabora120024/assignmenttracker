@@ -16,11 +16,11 @@ def search_assignment(assignments):
 
         if keyword in a["name"].lower() or keyword in a["subject"].lower():
             print("\nAssignment", i + 1)
-            print("Name     :", a["name"])
-            print("Subject  :", a["subject"])
-            print("Deadline :", a["deadline"])
-            print("Priority :", a["priority"])
-            print("Status   :", a["status"])
+            print("Name:", a["name"])
+            print("Subject:", a["subject"])
+            print("Deadline:", a["deadline"])
+            print("Priority:", a["priority"])
+            print("Status:", a["status"])
 
             found = True
 
@@ -38,10 +38,10 @@ def pending_assignments(assignments):
 
         if a["status"] == "Pending":
             print("\nAssignment", i + 1)
-            print("Name     :", a["name"])
-            print("Subject  :", a["subject"])
-            print("Deadline :", a["deadline"])
-            print("Priority :", a["priority"])
+            print("Name:", a["name"])
+            print("Subject:", a["subject"])
+            print("Deadline:", a["deadline"])
+            print("Priority:", a["priority"])
 
             found = True
 
