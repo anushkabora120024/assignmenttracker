@@ -7,7 +7,11 @@ def add_assignment():
     deadline = input("Enter deadline (DD-MM-YYYY): ")
     priority = input("Enter priority (High/Medium/Low): ")
 
-    new_assignment = {"name": name,"subject": subject,"deadline": deadline,"priority": priority,"status": "Pending"}
+    new_assignment = {"name": name,
+                      "subject": subject,
+                      "deadline": deadline,
+                      "priority": priority,
+                      "status": "Pending"}
 
     assignments.append(new_assignment)
     print("Assignment added ")
